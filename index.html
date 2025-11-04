@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chess Knight's Journey</title>
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/board.css">
+</head>
+<body>
+    <!-- Game Container -->
+    <div id="game-container" class="game-container">
+        <!-- Health Display -->
+        <div id="health-display" class="health-display"></div>
+        
+        <!-- Chess Board -->
+        <div id="chess-board" class="chess-board"></div>
+    </div>
+    
+    <!-- Deck Viewer Modal -->
+    <div id="modal-overlay" class="modal-overlay" style="display: none;">
+        <div id="modal-content" class="modal-content">
+            <div class="modal-header">
+                <h2>Your Deck</h2>
+                <button id="close-modal" class="close-modal">&times;</button>
+            </div>
+            <div id="deck-cards-container" class="deck-cards-container">
+                <!-- Card elements will be dynamically inserted here -->
+            </div>
+        </div>
+    </div>
+    
+    <!-- Card Tooltip -->
+    <div id="card-tooltip" class="card-tooltip" style="display: none;">
+        <div class="tooltip-header"></div>
+        <div class="tooltip-body"></div>
+    </div>
+    
+    <script type="module" src="main.js"></script>
+</body>
+</html>
